@@ -1,0 +1,42 @@
+.change-btn {
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+  margin: 0 10px;
+  margin-top: 15px;
+}
+.change-btn .btn {
+  display: flex;
+  width: 33%;
+  flex-direction: column;
+  background: #fff;
+  text-align: center;
+  color: #9a9ead;
+  font-size: 12px;
+  margin: 0 5px;
+  border: 1px solid #d7deeb;
+  border-radius: 8px;
+  padding: 5px 0;
+}
+.change-btn .btnActive {
+  background: #f1f4ff;
+  color: #4d79f3 !important;
+  border-color: #bdcfff;
+  position: relative;
+}
+.change-btn .btnActive::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: 1px solid #bdcfff;
+  border-width: 0 0 1px 1px;
+  display: block;
+  top: -0.07rem;
+  left: 50%;
+  margin-left: -0.05rem;
+  background: #f1f4ff;
+  transform: rotate(135deg);
+  width: 0.1rem;
+  height: 0.1rem;
+}
